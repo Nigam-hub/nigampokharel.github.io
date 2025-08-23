@@ -1,17 +1,39 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nigam Pokharel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background-color: White;}
-    h1 { color: #000000; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <h1>Comming Soon</h1>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
 
+    <!-- Logged Out View -->
+    <div id="auth-container">
+        <form id="auth-form">
+            <h3 id="form-title">Verify</h3>
+
+            <label for="username">Name</label>
+            <input type="text" placeholder="Username" id="username" required>
+
+            <label for="password">Key</label>
+            <input type="password" placeholder="Password" id="password" required>
+
+            <button type="submit" id="submit-button">Open the door!</button>
+            <p id="message-area" class="message"></p>
+
+            
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
